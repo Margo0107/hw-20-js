@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/my-todo/js/css/style.css">
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h2>my todo list</h2>
+      <ul id="todo-list" class="list-group">
+        <li class="list-group-item">Read a book</li>
+        <li class="list-group-item">Do your homework</li>
+        <li class="list-group-item">Ask for water</li>
+      </ul>
+    </div>
+    <!-- modal -->
+    <div
+      class="modal fade"
+      id="taskModal"
+      tabindex="-1"
+      aria-labelledby="taskModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="taskModalLabel">Your task</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Сlose"
+            ></button>
+          </div>
+          <!-- the task text is updated here -->
+          <div class="modal-body" id="modal-text">Task text</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/main.js"></script>
+</html>
