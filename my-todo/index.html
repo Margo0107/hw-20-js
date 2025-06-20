@@ -10,16 +10,20 @@
     />
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="/my-todo/js/css/style.css">
+    <link rel="stylesheet" href="/my-todo/js/css/style.css" />
   </head>
   <body>
     <div class="container mt-4">
       <h2>my todo list</h2>
-      <ul id="todo-list" class="list-group">
-        <li class="list-group-item">Read a book</li>
-        <li class="list-group-item">Do your homework</li>
-        <li class="list-group-item">Ask for water</li>
-      </ul>
+      <form class="js--form d-flex gap-2 mb-3">
+        <input
+          type="text"
+          class="form-control js--form__input"
+          placeholder="add task"
+        />
+        <button type="submit" class="btn btn-primary">add</button>
+      </form>
+      <ul class="js--todos-wrapper list-group"></ul>
     </div>
     <!-- modal -->
     <div
