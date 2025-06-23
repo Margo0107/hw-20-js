@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "@babel/cli": "^7.27.2",
+    "@babel/core": "^7.27.4",
+    "@babel/preset-env": "^7.27.2"
+  },
+  "scripts": {
+    "build": "babel src/main.js --out-file dist/main.js"
+  }
+}
